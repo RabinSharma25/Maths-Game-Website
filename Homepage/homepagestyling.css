@@ -1,0 +1,94 @@
+/* title */
+h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #fff;
+}
+.navbar{
+    background-color: #ADA2FF;
+    padding-top: 10px;
+}
+
+#title{
+    background-color: #ADA2FF;
+    padding-bottom: 200px;
+}
+
+.title-header{
+    margin-top: 100px;
+    padding-top: 5px;
+    font-weight: 90;
+    font-size: 70px;
+}
+
+.btn-div{
+    width:40%;
+    margin-left: 40px;
+    padding-bottom: 30px;
+    
+}
+.btn{
+    background-color:white;
+}
+
+/* features */
+
+#features{
+    background-color: #FFD384;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.features-content{
+    padding:40px 5px;
+}
+
+.icon {
+    color: #ef8172;
+    margin: 0 auto;
+}
+
+.icon:hover {
+    color: #ff4c68;
+}
+
+
+/* testimonials */
+#testimonials{
+background-color: aqua;
+padding: 7% 15%;
+text-align: center;
+}
+
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+
+/* contact */
+#contact{
+    text-align: center;
+    background-color:antiquewhite;
+    padding-top: 200px;
+    padding-bottom: 100px;
+
+}
+
+.ico{
+    padding:30px 15px 0px 15px;
+}
+
+.SM-icons{
+margin:30px 0 20px 0;
+}
+
+.para-elem{
+    color: #8f8f8f;
+    font-family: "montserrat";
+padding-bottom: 30px;
+}
