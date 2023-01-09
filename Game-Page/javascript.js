@@ -6,6 +6,12 @@ var timeremaining;
 var correctAnswer;
 
 //if we click on the start/reset
+
+timeremaining=60;
+document.getElementById("timer-btn").onclick=function (){
+    timeremaining = (document.getElementById("timer-val").value) *60;
+    
+}
 document.getElementById("startreset").onclick = function () {
 
     //if we are playing
@@ -28,8 +34,14 @@ document.getElementById("startreset").onclick = function () {
         //show countdown box 
 
         show("timeremaining");
-        timeremaining = 60;
-        document.getElementById("timeremainingvalue").innerHTML = timeremaining;
+        // timeremaining=60;
+        // document.getElementById("timer-btn").onclick=function (){
+        //     timeremaining = (document.getElementById("timer-val").value) *60;
+
+        // }
+        document.getElementById("timeremainingvaluemin").innerHTML = Math.floor(timeremaining/60);
+        document.getElementById("timeremainingvaluesec").innerHTML = Math.floor(timeremaining%60);
+
 
         //hide game over box
 
@@ -46,6 +58,7 @@ document.getElementById("startreset").onclick = function () {
 
         generateQA();
     }
+
 
 }
 
@@ -100,7 +113,9 @@ for (i = 1; i < 5; i++) {
 function startCountdown() {
     action = setInterval(function () {
         timeremaining -= 1;
-        document.getElementById("timeremainingvalue").innerHTML = timeremaining;
+        document.getElementById("timeremainingvaluemin").innerHTML = Math.floor(timeremaining/60);
+        document.getElementById("timeremainingvaluesec").innerHTML = Math.floor(timeremaining%60);
+
         if (timeremaining == 0) {// game over
             stopCountdown();
             show("gameOver");
