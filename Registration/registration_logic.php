@@ -10,9 +10,10 @@ if(isset($_POST['register-btn'])){
     $sql = "insert into loginregistration values('$username','$password')";
     if(mysqli_query($conn, $sql)){
         echo "<p>New row added successfully!</p>"; 
-        header("Location:/Maths-Game-Website/Login/login_page.php");
+        header("Location:../Login/login_page.php");
         echo "<script>alert('please login to play the game')</script>;" ;
     }else{
+        echo "Unable to Register please try again";
         echo "ERROR: Unable to execute $sql" . mysql_error($link);   
     }
 

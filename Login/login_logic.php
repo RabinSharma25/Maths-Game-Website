@@ -12,14 +12,13 @@ if(isset($_POST['login-btn'])){
 
     if($count ==1){
 
-header("Location:/Maths-Game-Website/Game-Page/indexed.html");
+header("Location:../Game-Page/indexed.html");
         echo "right";
     }
     else{
-        echo"wrong";
         echo '<script>
-        window.location.href ="indexed.php";
-        alert("Login faied. Invalid username or password !!!");
+        window.location.href ="login_page.php";
+        alert("Login failed. Invalid username or password !!!");
         </script>';
     }
 
