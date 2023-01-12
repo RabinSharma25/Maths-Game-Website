@@ -1,12 +1,11 @@
-<?php 
-$serverName ="localhost";
-$userName ="root";
-$password ="";
-$dbName ="lblog_33351065_gamedatabase";
-$conn = new mysqli($serverName, $userName, $password,$dbName);
-// $link = @mysqli_connect($serverName, $userName, $password, $dbName) or die("ERROR: Unable to connect: " . mysqli_connect_error());
-if($conn->connect_error){
-    die("Connection failed".$conn->connect_error);
-}
-echo "";
+<?php
+    // Enter your host name, database username, password, and database name.
+    // If you have not set database password on localhost then set empty.
+    $con = mysqli_connect("localhost","root","", "test");
+
+    // Check connection
+    if (mysqli_connect_errno()){
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+   
 ?>
